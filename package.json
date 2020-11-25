@@ -18,20 +18,18 @@
   "bugs": {
     "url": "https://github.com/ptheson1902/nodejs_learn/issues"
   },
-
   "homepage": "https://github.com/ptheson1902/nodejs_learn#readme",
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.10.15",
     "express-handlebars": "^5.2.0"
   },
   "devDependencies": {
