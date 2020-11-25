@@ -3,7 +3,6 @@ class SearchController {
     index(req, res) {
         res.send('Search POST!!');
     }
-
 }
 
 module.exports = new SearchController();
