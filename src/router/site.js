@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const siteController = require('../app/controllers/SiteController');
+const searchController = require('../app/controllers/SearchController');
 
-router.post('/search', siteController.index);
-//router.get('/search', siteController.search);
+router.get('/search', searchController.index);
+
+router.post('/search', searchController.show);
 
 router.get('/', siteController.index);
 

@@ -7,6 +7,8 @@ const Course = new Schema({
     image: { type: String },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
+    taikhoan: String,
+    password: String,
 });
 
 module.exports = mongoose.model('Course', Course);

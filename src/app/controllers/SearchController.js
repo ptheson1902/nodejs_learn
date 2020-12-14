@@ -1,7 +1,23 @@
+const Course = require('../models/Course');
+const { mongooseToObject } = require('../../ulti/mongoose');
+
 class SearchController {
-    // [POST] /home
+    // [GET] /search
     index(req, res) {
-        res.send('Search POST!!');
+        res.render('search');
+    }
+
+    show(req, res, next) {
+        var searchValue = req.body.search;
+        var matkhau = req.body.mk;
+        console.log(searchValue);
+        Course.findOne({ taikhoan: searchValue, password: matkhau })
+            .then((courses) => {
+                res.render('news', {
+                    courses: mongooseToObject(courses),
+                });
+            })
+            .catch(next);
     }
 }
 
