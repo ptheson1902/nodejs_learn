@@ -7,7 +7,7 @@ const Projects = new Schema({
     projectImage: { type: String },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
-    codeTechnologies: { type: Object },
+    codeTechnologies: { type: Array },
 });
 
 module.exports = mongoose.model('Projects', Projects);

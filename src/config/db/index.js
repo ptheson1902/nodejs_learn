@@ -10,7 +10,6 @@ async function connect() {
             useFindAndModify: false,
             useCreateIndex: true,
         });
-
         console.log('Connect Successfuly!');
     } catch {
         console.log('Connect Error!!!');

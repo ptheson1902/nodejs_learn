@@ -1,6 +1,6 @@
 <div class="header p-5">
     <div class="header-bar">
-        <a class="logo" href="#">
+        <a class="logo" href="/">
             <svg xmlns="http://www.w3.org/2000/svg" width="81.718" height="87.333" viewBox="0 0 81.718 87.333">
                 <g id="グループ_6" data-name="グループ 6" transform="translate(-187.388 -488.449)">
                     <path id="パス_1" data-name="パス 1"
@@ -79,21 +79,22 @@
     </div>
 </div>
 <ul class="nav">
-    <li class="nav-link">HOME</li>
-    <li class="nav-link">ABOUT</li>
-    <li class="nav-link">PROJECT</li>
-    <li class="nav-link">CONTACT</li>
+    <li class="nav-link"><a href="/">HOME</a></li>
+    <li class="nav-link"><a href="/about">ABOUT</a></li>
+    <li class="nav-link"><a href="/project">PROJECT</a></li>
+    <li class="nav-link"><a href="/contact">CONTACT</a></li>
 </ul>
+
 <script>
     $('.icon-menu').click(function () {
         $(this).css('display', 'none');
         $('.icon-menu-click').css('display', 'block');
-        $('.nav').css('display', 'block');
+        $('.nav').css({ 'display': 'block', 'width': '100%' });
     });
 
     $('.icon-menu-click').click(function () {
         $(this).css('display', 'none');
         $('.icon-menu').css('display', 'block');
-        $('.nav').css('display', 'none');
+        $('.nav').css({ 'width': '0', 'display': 'none' });
     });
 </script>
