@@ -5,7 +5,7 @@ async function connect() {
     //connect to MongoDB
     try {
         await mongoose.connect(
-            'mongodb+srv://ptheson:Gbbd5aJZ7w1SOVtd@cluster1.yjkbn.mongodb.net/portfolio?retryWrites=true&w=majority',
+            'mongodb+srv://ptheson:<password>@cluster1.yjkbn.mongodb.net/portfolio?retryWrites=true&w=majority',
             {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
